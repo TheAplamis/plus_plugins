@@ -46,7 +46,7 @@ public class SensorsPlugin implements FlutterPlugin {
     accelerometerChannel = new EventChannel(messenger, ACCELEROMETER_CHANNEL_NAME);
     final StreamHandlerImpl accelerationStreamHandler =
         new StreamHandlerImpl(
-            (SensorManager) context.dev.fluttercommunity.plus/sensors/accelerometer(context.SENSOR_SERVICE),
+            (SensorManager) context.getSystemService(context.SENSOR_SERVICE),
             Sensor.TYPE_ACCELEROMETER);
     accelerometerChannel.setStreamHandler(accelerationStreamHandler);
 
