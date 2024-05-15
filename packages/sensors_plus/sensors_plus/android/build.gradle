@@ -23,7 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
-    namespace = "com.example.draw_2"
+    namespace = "dev.fluttercommunity.plus.sensors"
   
     defaultConfig {
         minSdkVersion 16
